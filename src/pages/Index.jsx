@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -30,7 +30,7 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-red-600">
+        <Card className="mb-6 bg-red-600">
           <CardHeader>
             <h2 className="text-2xl font-semibold">Actions</h2>
           </CardHeader>
@@ -38,6 +38,20 @@ const Index = () => {
             <Button className="mr-2 bg-red-700 hover:bg-red-800">Primary Action</Button>
             <Button variant="outline" className="text-white border-white hover:bg-red-700">Secondary Action</Button>
           </CardContent>
+        </Card>
+
+        {/* New Card */}
+        <Card className="mb-6 bg-red-600">
+          <CardHeader>
+            <h2 className="text-2xl font-semibold">New Card</h2>
+          </CardHeader>
+          <CardContent>
+            <p>This is a new card that you can customize as needed.</p>
+            <img src="/placeholder.svg" alt="placeholder" className="mx-auto object-cover w-full h-48 my-4" />
+          </CardContent>
+          <CardFooter>
+            <Button className="w-full bg-red-700 hover:bg-red-800">Learn More</Button>
+          </CardFooter>
         </Card>
       </div>
     </div>
